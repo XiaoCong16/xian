@@ -1,0 +1,44 @@
+2023-05-02 16:48:52.095  INFO 34460 --- [main] com.xiaocong.xian.XianApplication        : Starting XianApplication on beautiful with PID 34460 (H:\xian\target\classes started by LBC in H:\xian)
+2023-05-02 16:48:52.097  INFO 34460 --- [main] com.xiaocong.xian.XianApplication        : No active profile set, falling back to default profiles: default
+2023-05-02 16:48:52.150  WARN 34460 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-02 16:48:52.922  INFO 34460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 521 (http)
+2023-05-02 16:48:52.930  INFO 34460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-02 16:48:52.930  INFO 34460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-05-02 16:48:53.024  INFO 34460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-02 16:48:53.024  INFO 34460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 892 ms
+2023-05-02 16:48:54.378  INFO 34460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-02 16:48:54.436  INFO 34460 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-02 16:48:55.286  INFO 34460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 521 (http) with context path ''
+2023-05-02 16:48:55.548  INFO 34460 --- [main] com.xiaocong.xian.XianApplication        : Started XianApplication in 4.083 seconds (JVM running for 4.817)
+2023-05-02 16:49:08.646  INFO 34460 --- [http-nio-521-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-02 16:49:08.646  INFO 34460 --- [http-nio-521-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-02 16:49:08.651  INFO 34460 --- [http-nio-521-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-05-02 16:49:09.390  INFO 34460 --- [http-nio-521-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-02 16:49:09.756  INFO 34460 --- [http-nio-521-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-02 19:34:23.346  INFO 34460 --- [SpringContextShutdownHook] c.a.alicloud.oss.OssApplicationListener  : 1 OSSClients will be shutdown soon
+2023-05-02 19:34:23.352  INFO 34460 --- [SpringContextShutdownHook] c.a.alicloud.oss.OssApplicationListener  : shutdown ossClient: ossClient
+2023-05-02 19:34:29.341  INFO 33996 --- [main] com.xiaocong.xian.XianApplication        : Starting XianApplication on beautiful with PID 33996 (H:\xian\target\classes started by LBC in H:\xian)
+2023-05-02 19:34:29.343  INFO 33996 --- [main] com.xiaocong.xian.XianApplication        : No active profile set, falling back to default profiles: default
+2023-05-02 19:34:29.394  WARN 33996 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-02 19:34:30.240  INFO 33996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 521 (http)
+2023-05-02 19:34:30.248  INFO 33996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-02 19:34:30.248  INFO 33996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-05-02 19:34:30.354  INFO 33996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-02 19:34:30.354  INFO 33996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 978 ms
+2023-05-02 19:34:31.766  INFO 33996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-02 19:34:31.827  INFO 33996 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-02 19:34:32.732  INFO 33996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 521 (http) with context path ''
+2023-05-02 19:34:33.008  INFO 33996 --- [main] com.xiaocong.xian.XianApplication        : Started XianApplication in 4.316 seconds (JVM running for 5.061)
+2023-05-02 19:34:35.883  INFO 33996 --- [http-nio-521-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-02 19:34:35.884  INFO 33996 --- [http-nio-521-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-02 19:34:35.890  INFO 33996 --- [http-nio-521-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-05-02 19:34:36.973  INFO 33996 --- [http-nio-521-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-02 19:34:37.431  INFO 33996 --- [http-nio-521-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-02 19:34:37.538  INFO 33996 --- [http-nio-521-exec-4] c.x.xian.controller.PicController        : 2023-05-02 19:34:849::我来了0
+2023-05-02 19:34:50.720  INFO 33996 --- [http-nio-521-exec-3] c.x.xian.controller.PicController        : 2023-05-02 19:34:649::我来了1
+2023-05-02 19:35:06.231  INFO 33996 --- [http-nio-521-exec-5] c.x.xian.controller.PicController        : 2023-05-02 19:35:163::我来了2
+2023-05-02 20:45:14.072  INFO 33996 --- [SpringContextShutdownHook] c.a.alicloud.oss.OssApplicationListener  : 1 OSSClients will be shutdown soon
+2023-05-02 20:45:14.073  INFO 33996 --- [SpringContextShutdownHook] c.a.alicloud.oss.OssApplicationListener  : shutdown ossClient: ossClient
+2023-05-02 20:45:14.267  INFO 33996 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-02 20:45:14.268  INFO 33996 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-02 20:45:14.272  INFO 33996 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

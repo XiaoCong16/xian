@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小聪和周宝西安旅行2023/4/27-2023/5/1</title>
+</head>
+<style>
+    #app {
+        width: 800px;
+        height: auto;
+    }
+
+    img {
+        width: 780px;
+        height: auto;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+</style>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<body>
+<div id="app">
+    <h3>有的还没做好，视频什么的技术有点复杂还没做，图片只传了一部分</h3>
+    <!--        <div>-->
+    <!--            留言：</br>-->
+    <!--            <input type="text" height="30px">-->
+    <!--            <button onclick="">提交</button>-->
+    <!--        </div>-->
+
+
+    <li v-for="item in urls">
+        <img :src="item"></br>
+    </li>
+
+
+    <div id="btndiv">
+        <h3>当前第{{nowPage}}页，一共{{totalPage}}页</h3>
+        <button style="height: 200px;width: 300px;font-size:30px;background-color: #ffd647" v-if="hasPre" @click="preUrl()">上一页
+        </button>
+        &nbsp&nbsp&nbsp&nbsp
+        <button style="height: 200px;width: 300px;font-size:30px;background-color: #ea3959" v-if="hasNext" @click="nextUrl()">下一页
+        </button>
+    </div>
+</div>
+</body>
+
+<script>
+    const {createApp} = Vue;
+    createApp({
+        data() {
+            return {
+                urls: [],
+                pagesize: 20,
+                totalPage: "",
+                nowPage: "1",
+                hasPre: false,
+                hasNext: false
+            }
+        },
+        created() {
+            this.getUrl()
+        },
+        methods: {
+            getUrl() {
+                let url = "/getAllUrl?pagesize=" + 20 + "&nowPage=" + (this.nowPage - 1);
+                axios.get(url).then((res) => {
+                    this.urls = res.data.urls.urls;
+                    this.totalPage = res.data.urls.totalPage;
+                    this.nowPage = res.data.urls.nowPage + 1;
+                    this.hasPre = false;
+                    this.hasNext = (this.totalPage - this.nowPage) == 0 ? false : true;
+                    console.log(this.urls);
+                })
+            },
+            nextUrl() {
+                let url = "/getAllUrl?pagesize=" + 20 + "&nowPage=" + this.nowPage;
+                axios.get(url).then((res) => {
+                    this.urls = res.data.urls.urls;
+                    this.totalPage = res.data.urls.totalPage;
+                    this.nowPage = res.data.urls.nowPage + 1;
+                    this.hasPre = this.nowPage == 1 ? false : true;
+                    this.hasNext = (this.totalPage - this.nowPage) == 0 ? false : true;
+                    console.log(this.urls);
+                })
+            },
+            preUrl() {
+                let url = "/getAllUrl?pagesize=" + 20 + "&nowPage=" + (this.nowPage - 2);
+                axios.get(url).then((res) => {
+                    this.urls = res.data.urls.urls;
+                    this.totalPage = res.data.urls.totalPage;
+                    this.nowPage = res.data.urls.nowPage + 1;
+                    this.hasPre = this.nowPage == 1 ? false : true;
+                    this.hasNext = (this.totalPage - this.nowPage) == 0 ? false : true;
+                    console.log(this.urls);
+                })
+            }
+        }
+    }).mount('#app')
+
+</script>
+</html>

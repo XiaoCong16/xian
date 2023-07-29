@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    alicloud:
+      access-key: LTAI5tPNMCHJQhDP972XMTgn
+      secret-key: 6kRU6O6fl5sJmQkiU496tD1jj1WNVR
+      oss:
+        endpoint: oss-cn-shanghai.aliyuncs.com
+        bucket: xiaocong-fangfang-xian
+  datasource:
+    username: root
+    password: a123
+    url: jdbc:mysql://175.178.151.17:3306/xiaocong_fangfang?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 521
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+logging:
+  file:
+    name: "x.log"
+
